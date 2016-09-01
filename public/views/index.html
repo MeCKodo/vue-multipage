@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="screen-orientation" content="portrait">
+	<title>二哲 - vue版多页应用架构</title>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+		}
+		#container {
+			width:600px;
+			margin:200px auto 0;
+			text-align: center;
+		}
+		h3 {
+			color: #4fc08d;
+			margin:10px 0 5px;
+		}
+		p {
+			color: #666;
+			line-height: 1.7;
+		}
+		#avatar {
+			width:60px;
+			margin:0 auto;
+			height:60px;
+			background: url("yourCDNLink/static/images/home/logo.jpg");
+			background-size: cover;
+			border-radius: 50%;
+			box-shadow: 0 14px 27px 0 rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<figure id="avatar"></figure>
+	<h3>这是一套多页应用的解决方案</h3>
+	<p>
+		享受es6 + .vue组件化带来的快感吧! <br>
+		修改url为 localhost:3000/views/[container]/[page].html 进入对应页面<br>
+		如: localhost:3000/views/home/index.html
+	</p>
+</div>
+</body>
+</html>

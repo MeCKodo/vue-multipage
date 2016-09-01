@@ -1,0 +1,1 @@
+{"version":3,"sources":["home/index.scss"],"names":[],"mappings":"AAEA,WACE,kBAAoB,CACrB","file":"home/index.css","sourcesContent":["// home业务模块下 index页面用的公用sass\n\n#container {\n  background: #f1f1f1;\n}\n"],"sourceRoot":"/source/"}

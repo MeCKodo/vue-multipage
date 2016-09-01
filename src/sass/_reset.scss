@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body, ul, li, ol, p, span, i, input, img, textarea, button, iframe, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+i, address {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+body {
+  font-family: aileron,微软雅黑,"arial", "sans-serif";
+  -webkit-overflow-scrolling: touch;
+}
+a {
+  text-decoration: none; }
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6, b {
+  -webkit-text-size-adjust: none; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video, svg, path, select, option {
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+input, select,textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input:focus, textarea:focus, button {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+a {
+  color: #333; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden; }
+
+.clearfix {
+  zoom: 1; }
+.static-error {
+  color: blue;
+  text-decoration: underline;
+  display: none;
+}
