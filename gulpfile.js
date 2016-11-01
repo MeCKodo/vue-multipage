@@ -187,7 +187,7 @@ gulp.task('fonts', function () {
 	.pipe(gulp.dest(dist.fonts));
 });
 gulp.task('js:build', function () {
-	cp('./src/js/lib/*.js','./src/tmp/es6/lib');
+	cp('./src/js/lib/*.js','./src/tmp/js/lib');
 	return compileJS(['./src/js/**/*.js','!./src/js/lib/*.js'],'./src/tmp');
 });
 gulp.task('ugjs:build', function () {
