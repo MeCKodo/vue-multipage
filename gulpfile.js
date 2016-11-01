@@ -80,7 +80,7 @@ const src = {
 	images: './src/images/**/*.{png,jpg,jpeg}',
 	js: './src/js/**/*.js',
 	sass: './src/sass/**/*.scss',
-	components: './src/components/**/*.vue',
+	components: './src/components/**/*.{vue,jsx}',
 	views: './src/views/**/*.html'
 };
 const dist = {
