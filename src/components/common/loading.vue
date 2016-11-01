@@ -12,11 +12,11 @@
 		color: #abcedf;
 	}
 	@font-face {font-family: 'iconfont';
-		src: url('../../assets/fonts/iconfont.eot'); /* IE9*/
-		src: url('../../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../../assets/fonts/iconfont.woff') format('woff'), /* chrome、firefox */
-		url('../../assets/fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-		url('../../assets/fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		src: url('../../fonts/iconfont.eot'); /* IE9*/
+		src: url('../../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+		url('../../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		url('../../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 	}
 	.iconfont{
 		font-family:"iconfont" !important;

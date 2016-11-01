@@ -2,7 +2,7 @@
 	<div>
 		<h1>我是用户信息</h1>
 		<figure>
-			<img src="../../assets/images/home/logo.jpg" alt="头像">
+			<img src="../../images/home/logo.jpg" alt="头像">
 		</figure>
 		<div id="bg">
 			<h3>这里是测试背景图片</h3>
@@ -22,10 +22,7 @@
 		height:70px;
 		border-radius: 50%;
 	}
-    #bg h3 {
-		background: url("../../assets/images/holmes.jpg");
-		color: #fff;
-	}
+
 </style>
 <script>
     // home业务模块下  只有index页面 用的组件

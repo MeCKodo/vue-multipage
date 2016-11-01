@@ -6,3 +6,4 @@ var V = new Vue({
 		myHead
 	}
 });
+  

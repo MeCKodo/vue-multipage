@@ -1,1 +1,0 @@
-{"version":3,"sources":["shopping/buy.scss"],"names":[],"mappings":"AACA,KACE,aAAe,CAChB","file":"shopping/buy.css","sourcesContent":["\n#buy {\n  color: #abcdef;\n}"],"sourceRoot":"/source/"}
