@@ -258,8 +258,6 @@ gulp.task('css:build', function () {
 	
 });
 function build(cb) {
-	// cp('./src/assets/images/!**!/!*.*','./src/static/images');
-	// cp('./src/assets/fonts/!**!/!*.{eot,svg,ttf,woff}','./src/static/fonts');
 	runSequence('clean','sass', 'css:build','js:build', 'ugjs:build', 'views:build', 'images', 'fonts',function() {
 		// 上传静态资源文件到CDN
 		cb && cb();
