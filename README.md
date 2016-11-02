@@ -1,6 +1,8 @@
 # Vue或React多页应用脚手架
+> 已升级2.0版本,优化目录结构,内部构建机制都换了  2016年11月01日
 
 ---
+
 ## 前言
 
 > 一直以来都在研究多页应用如何能有一套像SPA一样优雅的开发模式
@@ -11,6 +13,7 @@
 
 > (其实我是想把它做为大家多页应用的脚手架)
 
+
 ## 目录结构介绍
 
 > TIPS：任何的项目的架构都和目录结构有关，所以这部分非常重要，请仔细耐心阅读
@@ -19,28 +22,22 @@
 
 ```js
 |--- public // 生产环境下所需的文件
-    |--- static
-        |--- css
-        |--- es6
-        |--- fonts
-        |--- images
-    |--- views
-|--- src
-    |--- assets
-        |--- fonts
-        |--- images
     |--- components
+	|--- css
+	|--- fonts
+	|--- images
+	|--- js
+	|--- sass
+	|--- views
+|--- src
+    |--- components
+    |--- css
+	|--- fonts
+	|--- images
     |--- js
     |--- sass
-    |--- static
-        |--- css
-        |--- es6
-        |--- fonts
-        |--- images
     |--- views
 ```
-
-`src`里的`assets,components,js,sass`里的文件最后都会生成到`src/static`下，这个作为我们dev中引用的资源文件。而`public`不用说，是线上访问的文件。
 
 ---
 
@@ -111,13 +108,13 @@
 
 ```js
 ...
-<link rel="stylesheet" href="../../static/css/home/index.css">
+<link rel="stylesheet" href="../../css/home/index.css">
 
 ...
 
-<script src="../../static/es6/lib/vue(react).js"></script>
-<script src="../../static/es6/lib/react.dom.js"></script>
-<script src="../../static/es6/home/index.js"></script>
+<script src="../../js/lib/vue(react).js"></script>
+<script src="../../js/lib/react.dom.js"></script>
+<script src="../../js/home/index.js"></script>
 ...
 ```
 
