@@ -151,10 +151,8 @@ function dev() {
 		
 		if(paths.srcPath.split(sp).length === 3) { // 共有库情况,要编译所有js
 			compileJS(['./src/js/**/*.js','!./src/js/lib/*.js']);
-			console.log(1);
 		} else { // 否则 只编译变动js
 			compileJS(paths.srcPath);
-			console.log(2);
 		}
 	});
 	watch(['./src/components/**/*.vue'], function (event) {

@@ -7,8 +7,8 @@ import url from '../ajaxurl';
 console.log(url,'---我是测试环境变量配置用');
 Vue.use(vueTap);
 var V = new Vue({
-	el: 'body',
-	methods: {
+	el: '#container',
+	methods: { 
 		sayHi() {
 			require.ensure([], function () {
 				var say = require('../tools').say;

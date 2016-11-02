@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "v-tap": "^1.0.3",
+    "v-tap": "^2.0.2",
     "vue": "^1.0.15",
     "vuex": "^0.6.2"
   },
@@ -50,6 +50,7 @@
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
+    "v-tap": "^1.0.5",
     "vinyl-named": "^1.1.0",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.2.0",
