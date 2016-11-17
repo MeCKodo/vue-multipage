@@ -112,6 +112,9 @@ gulp.task('sass', function () {
 	return gulp.src(src.sass)
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
+	.pipe(ifElse(BUILD === 'PUBLIC', function() {
+		return replace('../../',CDN + '/')
+	}))
 	.pipe(sourcemaps.write('./maps'))
 	.pipe(gulp.dest('./src/css'))
 	.pipe(gulp.dest('./public/css'));
@@ -143,6 +146,16 @@ function dev() {
 	watch([src.sass]).on('change', function () {
 		runSequence('sass', function () {
 			bsReload();
+		});
+	});
+	watch([src.images]).on('change', function() {
+		runSequence('images', function () {
+			bsReload()
+		});
+	});
+	watch([src.fonts]).on('change', function() {
+		runSequence('fonts', function () {
+			bsReload()
 		});
 	});
 	watch([src.js], function (event) {

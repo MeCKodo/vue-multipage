@@ -2,7 +2,7 @@
   display: flex; }
 
 #bg h3 {
-  background: url("../../images/holmes.jpg");
+  background: url("yourCDNLink/images/holmes.jpg");
   color: #fff; }
 
 #container {
