@@ -138,22 +138,22 @@ gulp.task('reload', function () {
 	
 });
 function dev() {
-	watch([src.views]).on('change', function() {
+	watch([src.views], function() {
 		runSequence('views', function () {
 			bsReload()
 		});
 	});
-	watch([src.sass]).on('change', function () {
+	watch([src.sass], function () {
 		runSequence('sass', function () {
 			bsReload();
 		});
 	});
-	watch([src.images]).on('change', function() {
+	watch([src.images], function() {
 		runSequence('images', function () {
 			bsReload()
 		});
 	});
-	watch([src.fonts]).on('change', function() {
+	watch([src.fonts], function() {
 		runSequence('fonts', function () {
 			bsReload()
 		});
