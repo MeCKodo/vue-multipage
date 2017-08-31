@@ -1,10 +1,9 @@
 {
-  "js/2.js": "js/2-ad9911760a.js",
-  "js/ajaxurl.js": "js/ajaxurl-c4180294c2.js",
-  "js/home/index.js": "js/home/index-6fca0e610a.js",
-  "js/home/test.js": "js/home/test-05a0110e1e.js",
+  "js/ajaxurl.js": "js/ajaxurl-f6225f7815.js",
+  "js/home/index.js": "js/home/index-7f5e06957f.js",
+  "js/home/test.js": "js/home/test-548f66a5e0.js",
   "js/lib/vue-tap.js": "js/lib/vue-tap-c96e49d38d.js",
-  "js/lib/vue.js": "js/lib/vue-7de83fee84.js",
-  "js/shopping/buy.js": "js/shopping/buy-b2e3f06a8e.js",
-  "js/tools.js": "js/tools-2a59a19fb1.js"
+  "js/lib/vue.js": "js/lib/vue-3b4f485a20.js",
+  "js/shopping/buy.js": "js/shopping/buy-c183309566.js",
+  "js/tools.js": "js/tools-0c62ea8989.js"
 }

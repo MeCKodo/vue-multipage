@@ -1,5 +1,4 @@
 // 二哲 - 2016年08月15日
-const path = require('path');
 const gulp = require('gulp');
 const ugjs = require('gulp-uglify');
 const watch = require('gulp-watch');
@@ -24,49 +23,9 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const revCollector = require('gulp-rev-collector');
 const exec = require('child_process').exec;
-const CDN = 'yourCDNLink';
-var webpackConfig = {
-	resolve: {
-		root: path.join(__dirname, 'node_modules'),
-		alias: {
-			components: '../../components' // 组件别名,js里引用路径可直接 'components/xxx/yyy'
-		},
-		extensions: ['', '.js', '.vue', '.scss', '.css']
-	},
-	output: {
-		// publicPath: 'yourcdnlink/static/',
-		filename: 'js/[name].js',
-		chunkFilename: 'js/[id].js?[hash]'
-	},
-	module: {
-		noParse: [/vue.js/],
-		loaders: [
-			{test: /\.vue$/, loader: 'vue'},
-			{test: /\.js$/, loader: 'babel', exclude: /node_modules/},
-			{
-				test: /\.(png|jpe?g|gif)(\?.*)?$/,
-				loader: 'url',
-				query: {
-					limit: 5000, // 换成你想要得大小
-					name: 'images/[name].[ext]?[hash:10]'
-				}
-			},
-			{
-				test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
-				loader: 'url',
-				query: {
-					limit: 5000, // 换成你想要得大小
-					name: 'fonts/[name].[hash:7].[ext]'
-				}
-			}
-		]
-	},
-	plugins: [],
-	babel: { //配置babel
-		"presets": ["es2015",'stage-2'],
-		"plugins": ["transform-runtime"]
-	}
-};
+const CDN = require('./config/cdn');
+console.log(CDN);
+const webpackConfig = require('./config/webpack.base');
 
 const processes = [
 	autoprefixer({browsers: ['last 2 version', 'safari 5', 'opera 12.1', 'ios 6', 'android 4', '> 10%']}),
@@ -211,7 +170,7 @@ gulp.task('ugjs:build', function () {
 });
 function compileJS(path,dest) {
 	dest = dest || './public';
-	webpackConfig.output.publicPath = BUILD === 'PUBLIC' ? ''+ CDN +'/' : '/';
+	webpackConfig.output.publicPath = BUILD === 'PUBLIC' ? `${CDN}/` : '/';
 	
 	return gulp.src(path)
 	.pipe(named(function (file) {

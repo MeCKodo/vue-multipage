@@ -1,6 +1,6 @@
 # Vue或React多页应用脚手架
 > 已升级2.0版本,优化目录结构,内部构建机制都换了  2016年11月01日
-
+> 升级3.0版本，优化目录结构，优化编译速度,webpack替换为3.X  2017年08月31日
 ---
 
 ## 前言
@@ -86,22 +86,6 @@
     |--- shopping
         |--- buy.scss
         ...
-```
-
-他们编译在`static`下的文件将为
-
-```js
-|--- static
-    |--- css // scss 编译后的
-        |--- home
-            |--- index.css
-        |--- shopping
-            |--- buy.css
-    |--- js // babel处理后的js
-        |--- home
-            |--- index.js
-        |--- shopping
-            |--- buy.js
 ```
 
 页面引用的路径就为(home/index.html为例)
@@ -285,13 +269,10 @@ gulp配置很简单，大家可以看一下针对各自项目进行修改，不�
 
 vue-multpage : [https://github.com/MeCKodo/vue-multipage](https://github.com/MeCKodo/vue-multipage)
 
-react-multpage : [https://github.com/MeCKodo/react-multipage](https://github.com/MeCKodo/react-multipage)
-
 ## TODO
 
 - [ ] 项目的Unit test
 - [ ] 项目Cli脚手架
-
 
 ## 后话
 

@@ -3,8 +3,10 @@
 		我是home业务模块下的公共头部,修改我home业务模块下的js都会编译
 	</h1>
 </template>
-<style>
-
+<style scoped>
+  h1 {
+    color: red;
+  }
 </style>
 <script>
 	// 这个是home业务模块下的通用组件

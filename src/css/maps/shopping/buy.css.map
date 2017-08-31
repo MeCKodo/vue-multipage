@@ -1,1 +1,1 @@
-{"version":3,"file":"../../shopping/buy.css","sources":["shopping/buy.scss"],"sourcesContent":["\n#buy {\n  color: #abcdef;\n}"],"mappings":"AACA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,OAAQ,GAChB","names":[]}
+{"version":3,"file":"../../shopping/buy.css","sources":["shopping/buy.scss"],"sourcesContent":["\n#buy {\n  color: #abcdef;\n}"],"names":[],"mappings":"AACA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,OAAO,GACf"}
